@@ -11,6 +11,8 @@ app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
 // Middleware que adiciona um UUID a cada requisição. Serve para criar
 // threads de auditoria nos logs.
 
+const console = require('./teste');
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, host, () => console.log(`Server is running on port ${port}.`));
